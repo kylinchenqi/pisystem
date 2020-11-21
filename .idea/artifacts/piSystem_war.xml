@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="piSystem:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/piSystem_war</output-path>
+    <root id="archive" name="piSystem.war">
+      <element id="artifact" artifact-name="piSystem:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="springframework:spring:1.2.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-1.2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

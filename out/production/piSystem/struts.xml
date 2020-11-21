@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="piSystem" extends="struts-default">
+        <action name="login" class="com.pi.action.webaction" method="login">
+            <result name="success">/index.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+        <action name="listPersonal" class="com.pi.action.webaction" method="listPersonal">
+            <result name="success">/personal_list.jsp</result>
+        </action>
+        <action name="listTraining" class="com.pi.action.webaction" method="listTraining">
+            <result name="success">/training_list.jsp</result>
+        </action>
+        <action name="listPersonalIsDangyuan" class="com.pi.action.webaction" method="listPersonalIsDangyuan">
+            <result name="success">/personal_list.jsp</result>
+        </action>
+        <action name="listPersonalIsTuanyuan" class="com.pi.action.webaction" method="listPersonalIsTuanyuan">
+            <result name="success">/personal_list.jsp</result>
+        </action>
+        <action name="listPersonalZhizhao" class="com.pi.action.webaction" method="listPersonalZhizhao">
+            <result name="success">/personal_list.jsp</result>
+        </action>
+        <action name="listPersonalTele" class="com.pi.action.webaction" method="listPersonalTele">
+            <result name="success">/personal_list.jsp</result>
+        </action>
+        <action name="search" class="com.pi.action.webaction" method="search">
+            <result name="success">/personal_list.jsp</result>
+        </action>
+        <action name="personalEditLoad" class="com.pi.action.webaction" method="personalEditLoad">
+            <result name="success">/personal_edit.jsp</result>
+        </action>
+        <action name="trainingEditLoad" class="com.pi.action.webaction" method="trainingEditLoad">
+            <result name="success">/training_edit.jsp</result>
+        </action>
+        <action name="listPersonalCar" class="com.pi.action.webaction" method="listPersonalCar">
+            <result name="success">/personal_list.jsp</result>
+        </action>
+        <action name="updatePersonal" class="com.pi.action.webaction" method="updatePersonal">
+            <result name="success" type="redirectAction">listPersonal</result>
+        </action>
+        <action name="insertPersonal" class="com.pi.action.webaction" method="insertPersonal">
+            <result name="success" type="redirectAction">listPersonal</result>
+        </action>
+        <action name="updateTraining" class="com.pi.action.webaction" method="updateTraining">
+            <result name="success" type="redirectAction">listTraining</result>
+        </action>
+        <action name="insertTraining" class="com.pi.action.webaction" method="insertTraining">
+            <result name="success" type="redirectAction">listTraining</result>
+        </action>
+        <action name="listPersonalChild" class="com.pi.action.webaction" method="listPersonalChild">
+            <result name="success">/personal_list.jsp</result>
+        </action>
+    </package>
+</struts>
